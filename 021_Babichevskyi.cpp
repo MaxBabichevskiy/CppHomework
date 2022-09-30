@@ -7,7 +7,7 @@
 
 #ifndef game_h
 #define game_h
-
+enum wtype {cold,fire,unknown};
 
 #include <iostream>
 using namespace std;
@@ -17,8 +17,9 @@ class Weapon
 protected:
     string m_name;
     string m_model;
+    wtype m_type;
 public:
-    Weapon(string model = "", string name = "Unknown Weapon") : m_name{ name }, m_model{ model } {
+    Weapon(string model = "", string name = "Unknown Weapon", w_type type = unknown) : m_name{ name }, m_model{ model } {
         //        cout << "Weapon CONSTRUCTOR" << endl;
     }
 
