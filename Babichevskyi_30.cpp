@@ -1,4 +1,6 @@
-﻿#include <iostream>
+//Babichevskyi 030
+
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
